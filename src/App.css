@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.btn{
+  margin: 2px;;
+}
+.divbtn{
+  float: left;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -36,3 +42,96 @@
     transform: rotate(360deg);
   }
 }
+
+.button{
+  background-color: #636363;
+}
+
+
+.image {
+  position:relative;
+  color: white; 
+  height: 250px;
+}
+
+
+.title {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  font-weight: bold;
+  font-size: 23px;
+
+}
+
+.title1{
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  font-size: 22px;
+  
+}
+
+
+.menu{
+  
+    height: 60vh;
+    display: flex;
+    flex-Direction: column;
+    justify-Content: space-between;
+
+}
+
+
+.p{
+  font-size:x-small;
+}
+
+
+.card{
+  width : 800;
+  border-Radius:5px;
+  box-Shadow: 2px 2px 2px 2px rgba(211,211,211);
+  margin-Left: 5%;
+}
+
+::-webkit-scrollbar {
+
+ width: 5px;
+
+ height: 5px;
+
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+
+ background: #f1f1f1;
+
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+
+ background: #c6c6c6;
+
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+
+ background: #c6c6c6;
+
+}
+
+.slider{
+  
+    width: 50px;
+    border-radius: 5px;
+    height: 250px;
+}
+

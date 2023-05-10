@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CardDesign from "./Components/card-design";
+import FormPage from "./Components/form";
+import Table from "./Components/table";
+import Box from "./Components/box";
+import RawData from "./Components/raw-data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="" element={<FormPage />}>
+          <Route path="table" element={<Table />} />
+          <Route path="box" element={<Box />} />
+          <Route path="card-design" element={<CardDesign />} />
+          <Route path="raw-data" element={<RawData />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
