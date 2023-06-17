@@ -6,7 +6,7 @@ import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 class CardDesign extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <div className="image">
           <Typography.Title level={8}>Apps</Typography.Title>
           <img
@@ -15,9 +15,9 @@ class CardDesign extends React.Component {
             style={{ width: "100%", height: "400px" }}
           />
           <div>
-            <Typography class="title">NAFFCO DIGITAL APPS STORE</Typography>
+            <Typography class="title"> DIGITAL APPS STORE</Typography>
             <Typography class="title1">
-              For Smart Connected Fire Protection System
+              For Smart Connected Protection System
             </Typography>
           </div>
         </div>
@@ -91,7 +91,7 @@ class CardDesign extends React.Component {
         <Card size="small" style={{ background: "#f5f5f5" }}>
           <CardData />
         </Card>
-      </>
+      </div>
     );
   }
 }
